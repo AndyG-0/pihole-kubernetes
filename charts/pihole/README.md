@@ -44,13 +44,13 @@ dnsmasq:
 persistentVolumeClaim:
   enabled: true
 
-serviceTCPHTTP:
+serviceHTTP:
   loadBalancerIP: 192.168.178.252
   annotations:
     metallb.universe.tf/allow-shared-ip: pihole-svc
   type: LoadBalancer
 
-serviceTCPDNS:
+serviceDNS:
   loadBalancerIP: 192.168.178.252
   annotations:
     metallb.universe.tf/allow-shared-ip: pihole-svc
