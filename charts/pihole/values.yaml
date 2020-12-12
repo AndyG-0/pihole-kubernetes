@@ -18,7 +18,7 @@ serviceDns:
     # metallb.universe.tf/address-pool: network-services
     # metallb.universe.tf/allow-shared-ip: pihole-svc
 
-serviceHttp:
+serviceWeb:
   type: ClusterIP
   externalTrafficPolicy: Local
   loadBalancerIP: ""
